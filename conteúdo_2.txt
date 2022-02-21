@@ -3,3 +3,6 @@
 -Git
 HTML
 -CSS
+-Autoconhecimento
+-Empatia
+-Resiliência
