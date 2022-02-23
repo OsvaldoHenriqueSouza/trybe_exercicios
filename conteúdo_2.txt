@@ -1,8 +1,0 @@
--Unix
--Bash
--Git
--HTML
--CSS
--Autoconhecimento
--Empatia
--Resiliência
