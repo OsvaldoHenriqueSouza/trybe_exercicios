@@ -93,7 +93,7 @@ else if (porcentagem >= 60 && porcentagem < 70) {
 else if (porcentagem >= 70 && porcentagem < 80) {
     console.log("C")
 }
-else  if (porcentagem >= 80 && porcentagem < 90) {
+else if (porcentagem >= 80 && porcentagem < 90) {
     console.log("B")
 }
 else {
@@ -106,4 +106,25 @@ const num3 = 12;
 const num4 = 15;
 const num5 = 36;
 
-if ()
+if (num3 % 2 == 0 || num4 % 2 == 0 || num5 % 2 == 0) {
+    console.log(true)
+}
+else {
+    console.log(false)
+}
+
+// Nona questão
+
+const num3 = 12;
+const num4 = 15;
+const num5 = 36;
+
+if (num3 % 2 != 0 || num4 % 2 != 0 || num5 % 2 != 0) {
+    console.log(true)
+}
+else {
+    console.log(false)
+}
+
+// Décima questão
+
