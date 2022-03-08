@@ -128,3 +128,64 @@ else {
 
 // Décima questão
 
+const valorDoProduto = 20;
+const valorDeVenda = 50;
+let quantidadeVendida = 1000;
+
+// A seguir o nome da variável "valorDoProdutoTotalSituacional" se dá porque foi a única forma de anteder o requisito do problema proposto
+
+const valorDoProdutoTotalSituacional = valorDoProduto * 1.2 * quantidadeVendida;
+
+let lucro = (valorDeVenda * quantidadeVendida) - valorDoProdutoTotalSituacional;
+
+if (valorDoProduto == 0 || valorDoProdutoTotalSituacional == 0 || valorDeVenda == 0 || quantidadeVendida == 0) {
+    console.log("Impossível realizar operação: favor atribuir valor maior que zero!")
+}
+else {
+    console.log(lucro)
+}
+
+// Décima primeira questão
+
+let salarioBruto = 4200;
+let descontoInss = null;
+
+// A seguir condicional para desconto do INSS
+
+if (salarioBruto <= 1556.94) {
+    descontoInss = salarioBruto * 0.08
+}
+else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92) {
+    descontoInss = salarioBruto * 0.09
+}
+else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82) {
+    descontoInss = salarioBruto * 0.11
+}
+else {
+    salarioBruto - 570.88
+}
+
+// A segui condicional para o desconto do IR (imposto de renda)
+
+let salarioComDescontoInss = salarioBruto - descontoInss;
+let descontoDoImpostoDeRenda = null;
+
+if (salarioComDescontoInss <= 1903.98) {
+    descontoDoImpostoDeRenda = 0
+}
+else if (salarioComDescontoInss > 1903.98 && salarioComDescontoInss <= 2826.65) {
+    descontoDoImpostoDeRenda = (salarioComDescontoInss * 0.075) - 142.80
+}
+else if (salarioComDescontoInss > 2826.65 && salarioComDescontoInss <= 3751.05) {
+    descontoDoImpostoDeRenda = (salarioComDescontoInss * 0.15) - 354.80
+}
+else if (salarioComDescontoInss > 3751.05 && salarioComDescontoInss <= 4664.68) {
+    descontoDoImpostoDeRenda = (salarioComDescontoInss * 0.225)
+}
+else {
+    descontoDoImpostoDeRenda = (salarioComDescontoInss * 0.275) - 869.36
+}
+
+let salarioLiquido = salarioBruto - descontoInss - descontoDoImpostoDeRenda;
+
+console.log(salarioLiquido)
