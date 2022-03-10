@@ -38,8 +38,4 @@ for (let index4 = 0; index4 < array.length; index4++) {
 }
 console.log(maiorPalavra);
 
-
-
-
 // Quarta questao
-
