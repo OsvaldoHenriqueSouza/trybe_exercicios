@@ -27,3 +27,12 @@ let info = {
 for (let key in info) {
     console.log(key);
 }
+
+// Quarta questao
+
+for (let key in info) {
+    console.log(info[key]);
+}
+
+// Quinta questao
+
