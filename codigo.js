@@ -1,3 +1,4 @@
+// Primeira parte
 // Primeira questao
 
 
@@ -35,4 +36,17 @@ for (let key in info) {
 }
 
 // Quinta questao
+
+let info2 = {
+    personagem: "Margarida e Tio Patinhas",
+    origem: "Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #17",
+    nota: "Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas",
+    recorrente: "Ambos recorrentes // Atenção para essa última linha!",
+};
+
+for (let key in info2){
+    console.log(key ,info2[key]);
+}
+
+// Sexta questao
 
