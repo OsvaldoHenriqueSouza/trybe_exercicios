@@ -75,4 +75,8 @@ let leitor = {
       }
 
       console.log(leitor);
+
+      // Oitava questao
+
+      console.log(`${leitor.nome} tem 2 livros favoritos.`);
       
