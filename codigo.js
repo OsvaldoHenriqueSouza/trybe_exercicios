@@ -1,4 +1,5 @@
 // Primeira parte
+
 // Primeira questao
 
 
@@ -79,4 +80,40 @@ let leitor = {
       // Oitava questao
 
       console.log(`${leitor.nome} tem 2 livros favoritos.`);
-      
+
+// Segunda parte 
+
+// Primeira questao
+
+
+function verificarPalindrome (...palavra) {
+  if (palavra === palavra.reverse()){
+    return true;
+  }
+    return false;
+}
+
+console.log(verificarPalindrome(["jbdszbvkjhbsandvuianbjsd owasdjnbvQI"]));
+
+// Segunda questao
+
+
+function indiceMaiorValor (...numero) {
+  for (let index = 0; index < numero.length; index += 1) {
+    if (numero[index] > numero[0]) {
+      return index;
+    }
+  }
+}
+console.log(indiceMaiorValor([2, 3, 6, 7, 10, 1]));
+
+
+
+
+
+
+let num = [1,2,3,4,5];
+
+console.log(num[2])
+for (let i = 0; i < num.length; i += 1) {
+}
