@@ -57,13 +57,13 @@
 
         function mudaParaRgb (rgb) {
       let abaLateral = document.getElementsByClassName("main-content")[0];
-      abaLateral.style.background = rgb;
+      abaLateral.style.backgroundColor = rgb;
     }
     mudaParaRgb("rgb(76,164,109)");
     
     function mudaParaBranco (cor) {
      let corCentral = document.getElementsByClassName("center-content")[0];
-     corCentral.style.background = cor
+     corCentral.style.backgroundColor = cor
     }
     mudaParaBranco("white");
 
@@ -72,6 +72,12 @@
         recebeValor.innerText = tag
     }
     adicionaTagP("Trabalhando no area de desenvolvimento");
+
+    function correcaoH1 (h1Corrijido) {
+      let h1Errado = document.getElementsByClassName("title")[0];
+      h1Errado.innerText = h1Corrijido;
+    }
+    correcaoH1("Exercícios 5.1 - JavaScript");
     
     
 
