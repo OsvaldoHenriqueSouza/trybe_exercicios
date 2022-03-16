@@ -55,21 +55,25 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-    // let abaLateral = document.getElementsByClassName("main-content");
-    // abaLateral.style.background = "rgb(76,164,109)"
-
-
+        function mudaParaRgb (rgb) {
+      let abaLateral = document.getElementsByClassName("main-content")[0];
+      abaLateral.style.background = rgb;
+    }
+    mudaParaRgb("rgb(76,164,109)");
+    
     function mudaParaBranco (cor) {
      let corCentral = document.getElementsByClassName("center-content")[0];
      corCentral.style.background = cor
     }
-    // mudaParaBranco("white");
+    mudaParaBranco("white");
 
     function adicionaTagP (tag) {
         let recebeValor = document.getElementsByTagName("p")[0];
         recebeValor.innerText = tag
     }
-    // adicionaTagP("Trabalhando no area de desenvolvimento");    
+    adicionaTagP("Trabalhando no area de desenvolvimento");
+    
+    
 
     </script>
   </body>
