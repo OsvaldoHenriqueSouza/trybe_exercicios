@@ -67,19 +67,26 @@
     }
     mudaParaBranco("white");
 
-    function adicionaTagP (tag) {
+    function adicionaTagP(tag) {
         let recebeValor = document.getElementsByTagName("p")[0];
         recebeValor.innerText = tag
     }
     adicionaTagP("Trabalhando no area de desenvolvimento");
 
-    function correcaoH1 (h1Corrijido) {
+    function correcaoH1(h1Corrijido) {
       let h1Errado = document.getElementsByClassName("title")[0];
       h1Errado.innerText = h1Corrijido;
     }
     correcaoH1("Exercícios 5.1 - JavaScript");
     
-    
+    function maiuscula(capsLock) {
+      let aumenta = document.querySelectorAll(".center-content p");
+      for (let i = 0; i < aumenta.length; i += 1) {
+        aumenta[i].style.textTransform = capsLock
+      }
+    }
+    maiuscula("capitalize");
+
 
     </script>
   </body>
