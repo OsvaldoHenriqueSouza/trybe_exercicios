@@ -76,16 +76,16 @@
         // Adicione a tag main com a classe main-content como filho da tag body ;
 
         function addTagEClass(tag, classe) {
-            let criaTagMain = document.createElement(tag);
-            criaTagMain.className = classe;
+            let criaTag = document.createElement(tag);
+            criaTag.className = classe;
 
-            addElementBody.appendChild(criaTagMain);
+            addElementBody.appendChild(criaTag);
         }
         addTagEClass("main", "main-content");
 
         // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 
-        
+        addTagEClass("section", "center-content");
 
     </script>
   </body>
