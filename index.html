@@ -63,7 +63,9 @@
 
     <script>
       // COLOQUE SEU CÓDIGO AQUI
-        let addElementBody = document.querySelector("body");
+      // Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+
+        let addElementBody = document.getElementsByTagName("body")[0];
         function addH1Body(valor) {
             let criaH1 = document.createElement("h1");
             criaH1.innerText = valor
@@ -71,7 +73,17 @@
         }       
         addH1Body("Exercício 5.2");
 
-        
+        // Adicione a tag main com a classe main-content como filho da tag body ;
+
+        function addTagEClass(tag, classe) {
+            let criaTagMain = document.createElement(tag);
+            criaTagMain.className = classe;
+
+            addElementBody.appendChild(criaTagMain);
+        }
+        addTagEClass("main", "main-content");
+
+        // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 
         
 
