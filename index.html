@@ -63,6 +63,11 @@
 
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+
+      function criaTag(tagDesejada) {
+        document.createElement(tagDesejada);
+      }
+
       // Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
 
         let addElementBody = document.querySelector("body");
@@ -85,7 +90,10 @@
 
         // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 
-        addTagEClass("section", "center-content");
+        let locTagMain = document.querySelector("main");
+        let criaSectionNaMain = document.createElement("section");  
+        criaSectionNaMain.className = "center-content";
+        locTagMain.appendChild(criaSectionNaMain);
 
         // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
@@ -98,7 +106,17 @@
         }
         addTagP("Vamo que vamo!");
 
+        // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+        let locTagMain1 = document.querySelector("main");
+        let leftContent = document.createElement("section");
+        leftContent.className = "left-content";
+        locTagMain1.appendChild(leftContent);
 
+        
+
+        function recebeLocal(caminho) {
+          caminho.appendChild()
+        }
 
     </script>
   </body>
