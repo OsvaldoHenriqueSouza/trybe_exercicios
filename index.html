@@ -125,7 +125,21 @@
        image.src = "https://picsum.photos/200";
        
        leftContent.appendChild(image);
-        
+
+      //  Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      
+      let ul = document.createElement("ul");
+      rightContent.appendChild(ul);
+      let array = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      
+      for (let i of array){
+        let li = document.createElement("li");
+        li.innerText = i;
+        ul.appendChild(li);
+      }
+
+      ul.appendChild(li);
+
         function recebeLocal(caminho) {
           caminho.appendChild()
         }
