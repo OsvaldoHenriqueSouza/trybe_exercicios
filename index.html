@@ -1,157 +1,173 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
 
-      .title {
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content {
-        background-color: yellow;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
 
 
 
 
 
-    <script>
-      // COLOQUE SEU CÓDIGO AQUI
+  <script>
+    // COLOQUE SEU CÓDIGO AQUI
 
-      function criaTag(tagDesejada) {
-        document.createElement(tagDesejada);
-      }
+    function criaTag(tagDesejada) {
+      document.createElement(tagDesejada);
+    }
 
-      // Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+    // Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
 
-        let addElementBody = document.querySelector("body");
-        function addH1Body(valor) {
-            let criaH1 = document.createElement("h1");
-            criaH1.innerText = valor
-            addElementBody.appendChild(criaH1)
-        }       
-        addH1Body("Exercício 5.2");
+    let addElementBody = document.querySelector("body");
+    function addH1Body(valor) {
+      let criaH1 = document.createElement("h1");
+      criaH1.innerText = valor
+      addElementBody.appendChild(criaH1)
+    }
+    addH1Body("Exercício 5.2");
 
-        // Adicione a tag main com a classe main-content como filho da tag body ;
+    // Adicione a tag main com a classe main-content como filho da tag body ;
 
-        function addTagEClass(tag, classe) {
-            let criaTag = document.createElement(tag);
-            criaTag.className = classe;
+    function addTagEClass(tag, classe) {
+      let criaTag = document.createElement(tag);
+      criaTag.className = classe;
 
-            addElementBody.appendChild(criaTag);
-        }
-        addTagEClass("main", "main-content");
+      addElementBody.appendChild(criaTag);
+    }
+    addTagEClass("main", "main-content");
 
-        // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+    // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 
-        let locTagMain = document.querySelector("main");
-        let criaSectionNaMain = document.createElement("section");  
-        criaSectionNaMain.className = "center-content";
-        locTagMain.appendChild(criaSectionNaMain);
+    let locTagMain = document.querySelector("main");
+    let criaSectionNaMain = document.createElement("section");
+    criaSectionNaMain.className = "center-content";
+    locTagMain.appendChild(criaSectionNaMain);
 
-        // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+    // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
-        let locTagpSection = document.querySelector("body section");
-        function addTagP(valorNoP) {
-          let criaP = document.createElement("p");
-          criaP.innerText = valorNoP
+    let locTagpSection = document.querySelector("body section");
+    function addTagP(valorNoP) {
+      let criaP = document.createElement("p");
+      criaP.innerText = valorNoP
 
-          locTagpSection.appendChild(criaP)
-        }
-        addTagP("Vamo que vamo!");
+      locTagpSection.appendChild(criaP)
+    }
+    addTagP("Vamo que vamo!");
 
-        // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-        let locTagMain1 = document.querySelector("main");
-        let leftContent = document.createElement("section");
-        leftContent.className = "left-content";
-        locTagMain1.appendChild(leftContent);
+    // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+    let locTagMain1 = document.querySelector("main");
+    let leftContent = document.createElement("section");
+    leftContent.className = "left-content";
+    locTagMain1.appendChild(leftContent);
 
-        // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+    // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 
-        let rightContent = document.createElement("section");
-        rightContent.className = "right-content";
-        locTagMain.appendChild(rightContent); 
+    let rightContent = document.createElement("section");
+    rightContent.className = "right-content";
+    locTagMain.appendChild(rightContent);
 
-        // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+    // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 
-       let image = document.createElement("img");
-       image.className = "small-image";
-       image.src = "https://picsum.photos/200";
-       
-       leftContent.appendChild(image);
+    let image = document.createElement("img");
+    image.className = "small-image";
+    image.src = "https://picsum.photos/200";
 
-      //  Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-      
-      let ul = document.createElement("ul");
-      rightContent.appendChild(ul);
-      let array = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
-      
-      for (let i of array){
-        let li = document.createElement("li");
-        li.innerText = i;
-        ul.appendChild(li);
-      }
-      let arrayH3 = ["sou bonito", "jogo bola", "e meto dança"];
-      for (let i = 0; i < arrayH3.length; i += 1){
+    leftContent.appendChild(image);
+
+    //  Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+
+    let ul = document.createElement("ul");
+    rightContent.appendChild(ul);
+    let array = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+
+    for (let i of array) {
+      let li = document.createElement("li");
+      li.innerText = i;
+      ul.appendChild(li);
+
+      // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+    }
+
+    // o codigo a seguir resolve a 9 e a 2 da segunda parte
+
+    let arrayH3 = ["sou bonito", "jogo bola", "e meto dança"];
+    for (let i = 0; i < arrayH3.length; i += 1) {
       let tresTagH3 = document.createElement("h3");
       tresTagH3.innerText = arrayH3[i];
       locTagMain1.appendChild(tresTagH3);
+      tresTagH3.className = "description"
     }
+
+    // segunda parte
+    // Adicione a classe title na tag h1 criada;
+
+    let locTagH1 = document.querySelector("h1");
+    locTagH1.className = "title";
+
+    // Adicione a classe description nas 3 tags h3 criadas;
 
     
 
-      ul.appendChild(li);
+    function recebeLocal(caminho) {
+      caminho.appendChild()
+    }
 
-        function recebeLocal(caminho) {
-          caminho.appendChild()
-        }
+  </script>
+</body>
 
-    </script>
-  </body>
 </html>
