@@ -149,7 +149,7 @@
       let tresTagH3 = document.createElement("h3");
       tresTagH3.innerText = arrayH3[i];
       locTagMain1.appendChild(tresTagH3);
-      tresTagH3.className = "description"
+      // tresTagH3.className = "description"
     }
 
     // segunda parte
@@ -160,11 +160,13 @@
 
     // Adicione a classe description nas 3 tags h3 criadas;
 
-    
-
-    function recebeLocal(caminho) {
-      caminho.appendChild()
+    function addClassH3 () {
+      let locH3 = document.querySelectorAll("main h3");
+      for (let i of locH3) {
+        i.classList = "description";
+      }
     }
+    addClassH3();
 
 
     // A seguir terá uma função que fiz para cirar elemento qualquert, recebrendo classe ou classes qualquer. Se alguém souber se alguém já desenvolveu essa função antes, me comunique para eu dá os créditos necessários.
