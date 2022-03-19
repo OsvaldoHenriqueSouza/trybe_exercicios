@@ -37,7 +37,8 @@ function addNumDias() {
 addNumDias();
 //   Exercício 2:
 
-let locBtnEntra = document.querySelector(".buttons-container");
+const locBtnEntra = document.querySelector(".buttons-container");
+
 function criaBotao(nomeBtn) {
     let btnHoliday = document.createElement("button");
     btnHoliday.innerText = nomeBtn;
@@ -48,3 +49,13 @@ criaBotao("Feriados");
 
 // Exercício 3:
 
+const locBtnHoliday = document.getElementById("btn-holiday");
+
+locBtnHoliday.addEventListener("click", clickMudaCorBtnHoliday);
+
+function clickMudaCorBtnHoliday() {
+    let locClassHoliday = document.querySelectorAll(".holiday");
+    for (let i of locClassHoliday) {
+        i.style.backgroundColor = "#00ff00";
+    }
+}
