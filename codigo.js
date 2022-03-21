@@ -59,3 +59,13 @@ function clickMudaCorBtnHoliday() {
         i.style.backgroundColor = "#00ff00";
     }
 }
+
+// Exercício 4:
+
+function CriaBtnFriday(diaSemana) {
+    let btnFriday = document.createElement("button");
+    btnFriday.innerText = diaSemana;
+    btnFriday.id = "btn-friday";
+    locBtnEntra.appendChild(btnFriday);
+}
+CriaBtnFriday("Sexta-feira");
