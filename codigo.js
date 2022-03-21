@@ -69,3 +69,16 @@ function CriaBtnFriday(diaSemana) {
     locBtnEntra.appendChild(btnFriday);
 }
 CriaBtnFriday("Sexta-feira");
+
+// Exercícios 5:
+
+const locBtnFriday = document.getElementById("btn-friday");
+
+locBtnFriday.addEventListener("click", clickMudaTextoSexta);
+
+function clickMudaTextoSexta() {
+    let locClassFriday = document.querySelectorAll(".friday");
+    for (let i of locClassFriday) {
+        i.innerText = "Sextou!";
+    }
+}
