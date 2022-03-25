@@ -1,0 +1,37 @@
+* {
+  background-color: #F5EFFF;
+  padding: 0;
+}
+main {
+  border: solid 3px black;
+}
+
+.caixa-name-email {
+  margin: 5px;
+}
+
+.input-nome {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.input-email {
+  margin-bottom: 5px;
+}
+
+.textarea {
+  resize: none;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#button-submit {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #A594F9;
+}

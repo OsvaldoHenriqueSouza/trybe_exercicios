@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devixe-width, initial-scale=1.0">
+    <title>Exercicíos 6.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <div class="caixa-name-email">
+                <label for="nome-completo">Nome:
+                    <input type="text" minlength="10" maxlength="40" name="nome" id="nome-completo"
+                        placeholder="DIgite seu nome" class="input-nome" required>
+                    <br>
+                </label>
+                <label for="input-email">Email:
+                    <input type="email" minlength="10" maxlength="40" name="email" id="input-email"
+                        placeholder="Digite seu e-mail" class="input-email" required>
+                </label>
+            </div>
+            <br>
+            <label for="loc1">
+                <input type="radio" id="loc1" name="opcao-lugar" value="cid">Cidade
+            </label>
+            <label for="loc2">
+                <input type="radio" id="loc2" name="opcao-lugar" value="camp">Campo
+            </label>
+
+            <label for="loc3">
+                <input type="radio" id="loc3" name="opcao-lugar" value="prai">Praia
+            </label>
+            <label for="loc4">
+                <input type="radio" id="loc4" name="opcao-lugar" value="mont">Montanha
+            </label>
+            <br>
+            <textarea class="textarea" minlength="100" maxlength="500" name="motivo-de-ganhar" id="ganha-concurso"
+                cols="30" rows="10" required></textarea>
+            <br>
+            <label for="date">Qual a melhor data para realizar sua viagem?
+                <input type="text" id="date" name="data-viagem" value="" required placeholder="dd/mm/aaaa">
+                <br>
+                <input type="checkbox" name="termos" value="outras-oportunidades-trybe">Gostaria de receber outras
+                incríveis oportunidades oferecidas pela Trybe?
+                <br>
+                <input type="checkbox" name="termos" value="autoriza-uso-de-imagem">Concordo que imagens das minhas
+                férias poderão ser usadas na divulgação de concursos futuros.
+            </label>
+            <br>
+            <button type="submit" id="button-submit">Enviar</button>
+        </form>
+    </main>
+    <script src="codigo.js"></script>
+</body>
+
+</html>
